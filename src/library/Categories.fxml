@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="library.CategoriesController">
+   <children>
+      <Pane prefHeight="663.0" prefWidth="194.0" style="-fx-background-color: #1B222D;">
+         <children>
+            <JFXButton graphicTextGap="10.0" prefHeight="51.0" prefWidth="194.0" style="-fx-background-color: #1B222D;" text="| THE BLOCK" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_room_98px_3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <GridPane layoutY="50.0" prefHeight="410.0" prefWidth="194.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="btn1" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #242f3f;" text="Books" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_course_assign_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn2" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #1B222D; -fx-border-color: #242f3f;" text="Categories" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_elective_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn3" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #242f3f;" text="Students" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_user_groups_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn4" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #242f3f;" text="Borrow" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_saving_book_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn5" alignment="BASELINE_LEFT" graphicTextGap="20.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #242f3f;" text="Settings" textFill="WHITE" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_services_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_home" alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="10.0" layoutY="61.0" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: #242f3f;" text="Home" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/icons8_home_98px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+      <Label fx:id="lbl_title" layoutX="941.0" layoutY="614.0" style="-fx-font-family: arial;" stylesheets="@gradient_pane.css" text="All categories" textFill="#242f3f">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Pane fx:id="top_pane" layoutX="194.0" prefHeight="51.0" prefWidth="949.0" stylesheets="@gradient_pane.css">
+         <children>
+            <Label fx:id="showTime" layoutX="791.0" layoutY="13.0" onInputMethodTextChanged="#CatgTimeDisplay" prefHeight="17.0" prefWidth="95.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_close" contentDisplay="GRAPHIC_ONLY" layoutX="903.0" layoutY="13.0" mnemonicParsing="false" onAction="#CategoriesMenu" onMouseClicked="#CategoriesMenu" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 5em; -fx-background-color: #ffffff;" text="Close" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8_delete_sign_98px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="228.0" layoutY="617.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8_borrow_book_filled_98px.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="286.0" layoutY="627.0" prefHeight="8.0" prefWidth="637.0" />
+      <GridPane layoutX="237.0" layoutY="89.0" prefHeight="516.0" prefWidth="880.0">
+        <columnConstraints>
+          <ColumnConstraints fx:id="Cat_grid" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btn_Cat1" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" onAction="#CategoriesAction" onMouseClicked="#CategoriesAction" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Politics">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/poli.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat4" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="10.0" layoutY="16.0" onAction="#CategoriesAction4" onMouseClicked="#CategoriesAction4" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Technology" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Tech.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat2" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="273.0" layoutY="16.0" onAction="#CategoriesAction2" onMouseClicked="#CategoriesAction2" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Science" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Science.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat5" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="10.0" layoutY="193.0" onAction="#CategoriesAction5" onMouseClicked="#CategoriesAction5" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Business" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/business.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat3" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="273.0" layoutY="193.0" onAction="#CategoriesAction3" onMouseClicked="#CategoriesAction3" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Design" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/design.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat7" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="10.0" layoutY="370.0" onAction="#CategoriesAction7" onMouseClicked="#CategoriesAction7" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Demography" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/demo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat8" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="535.0" layoutY="16.0" onAction="#CategoriesAction8" onMouseClicked="#CategoriesAction8" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Administration" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Administration.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat6" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="535.0" layoutY="193.0" onAction="#CategoriesAction6" onMouseClicked="#CategoriesAction6" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Literature" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/literature.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_Cat9" alignment="CENTER" contentDisplay="TOP" graphicTextGap="10.0" layoutX="273.0" layoutY="370.0" onAction="#CategoriesAction9" onMouseClicked="#CategoriesAction9" prefHeight="120.0" prefWidth="190.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0.5em;" stylesheets="@gradient_pane.css" text="Education" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="160.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/education.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
